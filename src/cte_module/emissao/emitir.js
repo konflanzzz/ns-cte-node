@@ -2,13 +2,12 @@ const nsAPI = require('../commons/nsAPI')
 const url = "https://cte.ns.eti.br/cte/issue"
 
 class response {
-    constructor({ status, motivo, chCTe, nsNRec, erros, erro }) {
+    constructor({ status, motivo, chCTe, nsNRec, erros}) {
         this.status = status;
         this.motivo = motivo;
         this.chCTe = chCTe;
         this.nsNRec = nsNRec;
-        this.erros = erros
-        this.erro = erro;
+        this.erros = erros;
     }
 }
 
