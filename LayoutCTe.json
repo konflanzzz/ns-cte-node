@@ -1,0 +1,182 @@
+{
+    "CTe": {
+        "infCte": {
+            "ide": {
+                "cUF": "43",
+                "cCT": "00000330",
+                "CFOP": "5353",
+                "natOp": "PRESTACAO TRANSPORTE A ESTABELECIMENTO COMERCIAL",
+                "mod": "57",
+                "serie": "0",
+                "nCT": "2318",
+                "dhEmi": "2021-09-09T16:33:00-03:00",
+                "tpImp": "1",
+                "tpEmis": "1",
+                "cDV": "2",
+                "tpAmb": "2",
+                "tpCTe": "0",
+                "procEmi": "0",
+                "verProc": "1.02|NS_API",
+                "cMunEnv": "4303509",
+                "xMunEnv": "CAMAQUA",
+                "UFEnv": "RS",
+                "modal": "01",
+                "tpServ": "0",
+                "cMunIni": "4303509",
+                "xMunIni": "CAMAQUA",
+                "UFIni": "RS",
+                "cMunFim": "4303509",
+                "xMunFim": "CAMAQUA",
+                "UFFim": "RS",
+                "retira": "1",
+                "indIEToma": "9",
+                "toma3": {
+                    "toma": "3"
+                }
+            },
+            "emit": {
+                "CNPJ": "07364617000135",
+                "IE": "0170108708",
+                "xNome": "NEWS SYSTEMS LTDA",
+                "xFant": "teste",
+                "enderEmit": {
+                    "xLgr": "ROD RST 470 KM 221 BLOCO A",
+                    "nro": "221",
+                    "xBairro": "CAMAQUA",
+                    "cMun": "4303509",
+                    "xMun": "GARIBALDI",
+                    "CEP": "96180000",
+                    "UF": "RS",
+                    "fone": "5434638266"
+                }
+            },
+            "toma": {
+                "CNPJ": "07364617000135",
+                "IE": "0170108708",
+                "xNome": "NEWS SYSTEMS LTDA",
+                "xFant": "teste",
+                "enderEmit": {
+                    "xLgr": "ROD RST 470 KM 221 BLOCO A",
+                    "nro": "221",
+                    "xBairro": "CAMAQUA",
+                    "cMun": "4303509",
+                    "xMun": "GARIBALDI",
+                    "CEP": "96180000",
+                    "UF": "RS",
+                    "fone": "5434638266",
+                    "email": "fernando.konflanz@nstencologia.com.br"
+                }
+            },
+            "rem": {
+                "CNPJ": "07364617000135",
+                "IE": "0170108708",
+                "xNome": "CT-E EMITIDO EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL",
+                "enderReme": {
+                    "xLgr": "FAZENDA",
+                    "nro": "S/N",
+                    "xBairro": "ZONA RURAL",
+                    "cMun": "4303509",
+                    "xMun": "CAMAQUA",
+                    "UF": "RS",
+                    "cPais": "1058",
+                    "xPais": "BRASIL",
+                    "email": "konflanz.info@gmail.com"
+                }
+            },
+            "dest": {
+                "CNPJ": "07364617000135",
+                "IE": "0170108708",
+                "xNome": "CT-E EMITIDO EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL",
+                "enderDest": {
+                    "xLgr": "FAZENDA",
+                    "nro": "S/N",
+                    "xBairro": "ZONA RURAL",
+                    "cMun": "4303509",
+                    "xMun": "CAMAQUA",
+                    "UF": "RS",
+                    "cPais": "1058",
+                    "xPais": "BRASIL",
+                    "email": "konflanz.ns@gmail.com"
+                }
+            },
+            "vPrest": {
+                "vTPrest": "300.00",
+                "vRec": "300.00"
+            },
+            "imp": {
+                "ICMS": {
+                    "ICMS60": {
+                        "CST": "60",
+                        "vBCSTRet": "4550.00",
+                        "vICMSSTRet": "546.00",
+                        "pICMSSTRet": "12.00"
+                    }
+                },
+                "vTotTrib": "546.00"
+            },
+            "infCTeNorm": {
+                "infCarga": {
+                    "vCarga": "39000.00",
+                    "proPred": "CENOURA",
+                    "xOutCat": "CX",
+                    "infQ": [
+                        {
+                            "cUnid": "03",
+                            "tpMed": "CX",
+                            "qCarga": "650.0000"
+                        },
+                        {
+                            "cUnid": "01",
+                            "tpMed": "KILOS",
+                            "qCarga": "13000.0000"
+                        }
+                    ],
+                    "vCargaAverb": "39000.00"
+                },
+                "infDoc": {
+                    "infNF": [
+                        {
+                            "mod": "04",
+                            "serie": "0",
+                            "nDoc": "2",
+                            "dEmi": "2020-04-02",
+                            "vBC": "39000.00",
+                            "vICMS": "0.00",
+                            "vBCST": "0.00",
+                            "vST": "0.00",
+                            "vProd": "39000.00",
+                            "vNF": "39000.00",
+                            "nCFOP": "6101",
+                            "nPeso": "650.000",
+                            "infUnidTransp": [
+                                {
+                                    "tpUnidTransp": "7",
+                                    "idUnidTransp": "CMAU4899619",
+                                    "infUnidCarga": [
+                                        {
+                                            "tpUnidCarga": "1",
+                                            "idUnidCarga": "CMAU4899619",
+                                            "lacUnidCarga": [
+                                                {
+                                                    "nLacre": "256987569874488"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "versao": "3.00"
+        }
+    },
+    "infModal": {
+        "rodo": {
+            "RNTRC": "09549369"
+        },
+        "versaoModal": "3.00"
+    },
+    "versao": "3.00"
+}
