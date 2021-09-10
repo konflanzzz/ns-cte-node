@@ -18,8 +18,6 @@ class body {
         this.longitude = longitude;
         this.hashEntrega = hashEntrega;
         this.chavesEntregues = chavesEntregues;
-
-
     }
 }
 

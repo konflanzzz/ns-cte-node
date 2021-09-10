@@ -27,7 +27,7 @@ async function sendPostRequest(conteudo, tpDown, caminhoSalvar) {
     let responseAPI = new response(await nsAPI.PostRequest(url, conteudo))
 
     let downloadEventoBody = new downloadEvento.body(
-        responseAPI.retEvento.chNFe,
+        responseAPI.retEvento.chCTe,
         conteudo.tpAmb,
         tpDown,
         "CCe",

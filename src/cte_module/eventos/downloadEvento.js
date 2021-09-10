@@ -45,7 +45,7 @@ async function sendPostRequest(conteudo, caminhoSalvar) {
             idEvento = "110180"
             break
             
-        case "CANCCOMPENTREGA":
+        case "CANCCOMPENTREGA": 
             idEvento = "110181"
             break
 
