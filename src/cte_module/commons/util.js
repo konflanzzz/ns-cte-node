@@ -71,22 +71,14 @@ async function salvarArquivo(caminho, nomeArquivo, extensao, conteudo) {
 }
 
 
+//TBD
 
-function gerarHashCompEntrega(chave, imagem){
-        
-    var base64Imagem = fs.readFileSync(imagem, { encoding: 'base64' });
-
-    var hash = chave + base64Imagem
-
-    var sha1 = crypto.createHash("sha1").update(hash).digest("hex")
-
-    var base64 = new Buffer.from(sha1).toString('base64')
-
-    console.log(base64)
-
-}
-
-gerarHashCompEntrega("43210907364617000135570000000023181000003300", "C:/Users/fernando.konflanz/GitHub/cte-node-js/src/cte_module/commons/entrega.jpg")
+// function gerarHashCompEntrega(chave, imagem){
+//     var base64Imagem = fs.readFileSync(imagem, { encoding: 'base64' });
+//     var hash = chave + base64Imagem
+//     var sha1 = crypto.createHash("sha1").update(hash).digest("hex")
+//     var base64 = new Buffer.from(sha1).toString('base64')
+// }
 
 
 module.exports = { salvarArquivo, dhEmiGet, gravarLinhaLog }
