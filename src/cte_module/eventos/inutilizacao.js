@@ -26,11 +26,11 @@ class response {
     }
 }
 
-async function sendPostRequest(conteudo, tpDown, caminhoSalvar) {
+async function sendPostRequest(conteudo, caminhoSalvar) {
 
     let responseAPI = new response(await nsAPI.PostRequest(url, conteudo))
 
-    let downloadInutBody = new downloadInut.body(responseAPI.retornoInutNFe.chave, "2", tpDown)
+    let downloadInutBody = new downloadInut.body(responseAPI.retornoInutCTe.chave, "2")
 
     let downloadInutResponse = await downloadInut.sendPostRequest(downloadInutBody, caminhoSalvar)
 

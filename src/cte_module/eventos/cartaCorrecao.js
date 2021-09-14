@@ -4,12 +4,12 @@ const downloadEvento = require('./downloadEvento')
 const url = "https://cte.ns.eti.br/cte/cce/300"
 
 class body {
-    constructor(chNFe, tpAmb, dhEvento, nSeqEvento, xCorrecao) {
-        this.chNFe = chNFe;
+    constructor(chCTe, tpAmb, dhEvento, nSeqEvento, infCorrecao) {
+        this.chCTe = chCTe;
         this.tpAmb = tpAmb;
         this.dhEvento = dhEvento;
         this.nSeqEvento = nSeqEvento;
-        this.xCorrecao = xCorrecao;
+        this.infCorrecao = infCorrecao;
     }
 }
 
@@ -30,7 +30,7 @@ async function sendPostRequest(conteudo, tpDown, caminhoSalvar) {
         responseAPI.retEvento.chCTe,
         conteudo.tpAmb,
         tpDown,
-        "CCe",
+        "CCE",
         conteudo.nSeqEvento
     )
 

@@ -5,8 +5,8 @@ const util = require('../commons/util')
 const url = "https://cte.ns.eti.br/cte/cancel/300"
 
 class body {
-    constructor(chNFe, tpAmb, dhEvento, nProt, xJust) {
-        this.chNFe = chNFe;
+    constructor(chCTe, tpAmb, dhEvento, nProt, xJust) {
+        this.chCTe = chCTe;
         this.tpAmb = tpAmb;
         this.dhEvento = dhEvento;
         this.nProt = nProt;

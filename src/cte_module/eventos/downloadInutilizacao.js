@@ -4,10 +4,9 @@ const util = require('../commons/util')
 const url = "https://cte.ns.eti.br/cte/download/inut"
 
 class body {
-    constructor(chave, tpAmb, tpDown) {
+    constructor(chave, tpAmb) {
         this.chave = chave;
         this.tpAmb = tpAmb;
-        this.tpDown = tpDown
     }
 }
 
@@ -23,16 +22,8 @@ class response {
 async function sendPostRequest(conteudo, caminhoSalvar) {
 
     let responseAPI = new response(await nsAPI.PostRequest(url, conteudo))
-
-    if (responseAPI.retInut.json != null) {
-        util.salvarArquivo(caminhoSalvar, responseAPI.retInut.chave, "-procInut.json", responseAPI.retInut.json)
-    }
-
-    if (responseAPI.retInut.pdf != null) {
-        let data = responseAPI.retInut.pdf;
-        let buff = Buffer.from(data, 'base64');
-        util.salvarArquivo(caminhoSalvar, responseAPI.retInut.chave, "-procInut.pdf", buff)
-    }
+    
+    setTimeout(() => {}, 200);
 
     if (responseAPI.retInut.xml != null) {
         util.salvarArquivo(caminhoSalvar, responseAPI.retInut.chave, "-procInut.xml", responseAPI.retInut.xml)
