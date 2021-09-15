@@ -1,6 +1,5 @@
 const nsAPI = require('../commons/nsAPI')
 const downloadEvento = require('./downloadEvento')
-const util = require('../commons/util')
 
 const url = "https://cte.ns.eti.br/cte/compentregacanc"
 

@@ -5,11 +5,12 @@ const util = require('../commons/util')
 const url = "https://cte.ns.eti.br/cte/compentrega"
 
 class body {
-    constructor(chCTe, tpAmb, dhEvento, nProt, nSeqEvento, dhEentrega, nDoc, xNome, latitude, longitude, hashEntrega, chavesEntregues) {
+    constructor(chCTe, tpAmb, dhEvento, nProt, dhEntrega, nSeqEvento, dhEentrega, nDoc, xNome, latitude, longitude, hashEntrega, dhHashEntrega, chavesEntregues) {
         this.chCTe = chCTe;
         this.tpAmb = tpAmb;
         this.dhEvento = dhEvento;
         this.nProt = nProt;
+        this.dhEntrega = dhEntrega;
         this.nSeqEvento = nSeqEvento;
         this.dhEentrega = dhEentrega;
         this.nDoc = nDoc;
@@ -17,6 +18,7 @@ class body {
         this.latitude = latitude;
         this.longitude = longitude;
         this.hashEntrega = hashEntrega;
+        this.dhHashEntrega = dhHashEntrega;
         this.chavesEntregues = chavesEntregues;
     }
 }

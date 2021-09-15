@@ -1,6 +1,6 @@
 var fs = require('fs');
 const path = require('path')
-var crypto = require('crypto');
+var crypto = require('crypto')
 
 function dhEmiGet() {
 
@@ -31,16 +31,8 @@ function gravarLinhaLog(registro) {
         }
 
         else {
-
             fs.appendFile(path.join(caminhoLog, fileName + ".log"), logTime + " " + registro + "\r\n", function (err) {
-
-                if (err) {
-                    // append failed
-                }
-
-                else {
-                    // done
-                }
+                if (err) {console.log(err)}
             })
         }
     }
@@ -55,9 +47,7 @@ async function salvarArquivo(caminho, nomeArquivo, extensao, conteudo) {
     var caminhoSalvar = path.join(caminho, nomeArquivo + extensao)
 
     try {
-        if (!fs.existsSync(caminho)) {
-            fs.mkdirSync(caminho);
-        }
+        if (!fs.existsSync(caminho)){fs.mkdirSync(caminho)}
     }
 
     catch (err) {
@@ -70,15 +60,15 @@ async function salvarArquivo(caminho, nomeArquivo, extensao, conteudo) {
 
 }
 
+function gerarHashCompEntrega(chave, imagem){
 
-//TBD
+    var base64Imagem = fs.readFileSync(imagem, { encoding: 'base64' });
 
-// function gerarHashCompEntrega(chave, imagem){
-//     var base64Imagem = fs.readFileSync(imagem, { encoding: 'base64' });
-//     var hash = chave + base64Imagem
-//     var sha1 = crypto.createHash("sha1").update(hash).digest("hex")
-//     var base64 = new Buffer.from(sha1).toString('base64')
-// }
+    var sha1 = crypto.createHash("sha1").update(chave + base64Imagem).digest("hex")
 
+    var hashComprovante = new Buffer.from(sha1, "hex").toString('base64')
 
-module.exports = { salvarArquivo, dhEmiGet, gravarLinhaLog }
+    return hashComprovante
+}
+
+module.exports = { salvarArquivo, dhEmiGet, gravarLinhaLog, gerarHashCompEntrega }
